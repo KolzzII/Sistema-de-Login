@@ -20,5 +20,8 @@ if(!isset($_SESSION['id'])) {
 <body>
     Bem vindo à página, <?php echo $_SESSION['nome']; ?>.
 
+    <p>
+        <a href="logout.php">Sair</a>
+    </p>
 </body>
 </html>
