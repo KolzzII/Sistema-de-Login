@@ -8,6 +8,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="registro">
@@ -34,8 +35,9 @@ session_start();
                 unset($_SESSION['nome_existe'])
                 ?>
             </div>
-            <div class="registro-botao">
-                <button type="submit" name="registrar">Criar conta</button>
+            <div class="registrar">
+                <a href="index.php">Faça login</a>
+                <input type="submit" name="registrar" value="Registrar">
             </div>
         </form>
 
