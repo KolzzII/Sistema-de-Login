@@ -58,7 +58,7 @@ if(isset($_POST['nome']) || isset($_POST['senha'])) {
             ?>
         </div>
         <div class="login-entrar">
-            <a href="#">Criar conta</a>
+            <a href="registroForm.php">Criar conta</a>
             <input type="submit" name="entrar" value="Entrar">
         </div>
     </form>
