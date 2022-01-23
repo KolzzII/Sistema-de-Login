@@ -18,7 +18,7 @@ session_start();
                 <input type="text" name="nomeRegistro" placeholder="Nome"> <br>
                 <input type="password" name="senhaRegistro" placeholder="Senha"> <br>
                 <?php
-                if($_SESSION["status_registro"]):
+                if(isset($_SESSION["status_registro"]) && $_SESSION["status_registro"]):
                 ?>
                     <p>Registro conluído</p>
                 <?php
@@ -27,7 +27,7 @@ session_start();
                 ?>
                 
                 <?php
-                if($_SESSION['nome_existe']):
+                if(isset($_SESSION["status_registro"]) && $_SESSION['nome_existe']):
                 ?>
                     <p>Nome já existe</p>
                 <?php
